@@ -12,6 +12,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let allViews = Bundle.main.loadNibNamed("View", owner: nil)!
+        let onlyView = allViews[0] as! UIView
+        self.view.addSubview(onlyView)
     }
 
 
